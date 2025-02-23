@@ -1,4 +1,4 @@
-module tg-api-contracts-lib
+module github.com/Vsevololod/tg-api-contracts-lib
 
 go 1.23
 
