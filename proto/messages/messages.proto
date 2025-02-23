@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package messages;
+
+option go_package = "vsevo.messages.v1;messagesv1";
+
+enum MessageType {
+  UNKNOWN = 0;  // Неизвестный тип сообщения (по умолчанию)
+  TEXT = 1;     // Текстовое сообщение
+  VIDEO = 2;    // Видео сообщение
+  IMAGE = 3;    // Сообщение с изображением
+}
+
+// Сообщение
+message TgSendMessage {
+  string text = 1;                  // Текст сообщения
+  uint64 user_id = 2;               // Идентификатор пользователя
+  MessageType type = 3;             // Тип сообщения (используем enum)
+  map<string, string> params = 4;   // Параметры в виде ключ-значение
+}
