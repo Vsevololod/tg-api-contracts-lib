@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+
+queue rabbitMQ
+:user input: --> [tgqueue-app]
+[tgqueue-app] -r-> [tg-dispatcher]
+[tg-dispatcher] --> [tgqueue-app-download]
+[tgqueue-app-download] --> [tg-enricher]
+[tg-enricher] -l-> [tg-sender]
+[tg-sender] --> :user output:
+
+database video1
+database video2
+[tg-dispatcher] -r-> video1
+[tg-enricher] -r-> video2
+
+cloud yuotube
+[tgqueue-app-download] <-r- yuotube
+
+
+/'[tgqueue-app] --> rabbitMQ'/
+/'rabbitMQ --> [tg-dispatcher]'/
+/'[tg-dispatcher] --> rabbitMQ'/
+/'rabbitMQ --> [tgqueue-app-download]'/
+/'[tgqueue-app-download] --> rabbitMQ'/
+/'rabbitMQ --> [tg-enricher]'/
+
+@enduml

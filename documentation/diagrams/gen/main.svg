@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="310px" preserveAspectRatio="none"
+     style="width:808px;height:310px;" version="1.1" viewBox="0 0 808 310" width="808px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f18ag6b3c2i6is" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--MD5=[01f86abbde3cf69607b9d981b533abfe]
+entity rabbitMQ-->
+        <path d="M11,8 L86,8 C91,8 91,22.534 91,22.534 C91,22.534 91,37.0679 86,37.0679 L11,37.0679 C6,37.0679 6,22.534 6,22.534 C6,22.534 6,8 11,8 "
+              fill="#FEFECE" filter="url(#f18ag6b3c2i6is)" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <path d="M86,8 C81,8 81,22.534 81,22.534 C81,37.0679 86,37.0679 86,37.0679 " fill="none"
+              style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="65"
+              x="11" y="27.9659">rabbitMQ
+        </text><!--MD5=[7c6c19b0d4be798c274a543893212cba]
+entity user input-->
+        <ellipse cx="48.5" cy="82" fill="#FEFECE" filter="url(#f18ag6b3c2i6is)" rx="8" ry="8"
+                 style="stroke: #A80036; stroke-width: 1.5;"/>
+        <path d="M48.5,90 L48.5,117 M35.5,98 L61.5,98 M48.5,117 L35.5,132 M48.5,117 L61.5,132 " fill="none"
+              filter="url(#f18ag6b3c2i6is)" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="70"
+              x="13.5" y="152.4659">user input
+        </text><!--MD5=[cdb42a60ec9ab5cd3bbf0cc3d6f1215b]
+entity tgqueue-app-->
+        <rect fill="#FEFECE" filter="url(#f18ag6b3c2i6is)" height="39.0679" style="stroke: #A80036; stroke-width: 1.5;"
+              width="108" x="152.5" y="95"/>
+        <rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="147.5" y="100"/>
+        <rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="147.5" y="124.0679"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="88"
+              x="162.5" y="119.9659">tgqueue-app
+        </text><!--MD5=[067083007e3ccc731944f3f855b9224b]
+entity tg-dispatcher-->
+        <rect fill="#FEFECE" filter="url(#f18ag6b3c2i6is)" height="39.0679" style="stroke: #A80036; stroke-width: 1.5;"
+              width="111" x="151" y="169"/>
+        <rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="146" y="174"/>
+        <rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="146" y="198.0679"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="91"
+              x="161" y="193.9659">tg-dispatcher
+        </text><!--MD5=[a4e84fab2d8eaedb8b23a513deb7461e]
+entity tgqueue-app-download-->
+        <rect fill="#FEFECE" filter="url(#f18ag6b3c2i6is)" height="39.0679" style="stroke: #A80036; stroke-width: 1.5;"
+              width="179" x="322" y="169"/>
+        <rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="317" y="174"/>
+        <rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="317" y="198.0679"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="159"
+              x="332" y="193.9659">tgqueue-app-download
+        </text><!--MD5=[e5a8417143f273f7574d057478e776ef]
+entity tg-enricher-->
+        <rect fill="#FEFECE" filter="url(#f18ag6b3c2i6is)" height="39.0679" style="stroke: #A80036; stroke-width: 1.5;"
+              width="96" x="561" y="169"/>
+        <rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="556" y="174"/>
+        <rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="556" y="198.0679"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="76"
+              x="571" y="193.9659">tg-enricher
+        </text><!--MD5=[4ec610a93360d1882a2257078fb50644]
+entity tg-sender-->
+        <rect fill="#FEFECE" filter="url(#f18ag6b3c2i6is)" height="39.0679" style="stroke: #A80036; stroke-width: 1.5;"
+              width="86" x="566" y="95"/>
+        <rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="561" y="100"/>
+        <rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="561" y="124.0679"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66"
+              x="576" y="119.9659">tg-sender
+        </text><!--MD5=[cec0a8d4f87a18ede96ffe5dc1c58b53]
+entity user output-->
+        <ellipse cx="756.5" cy="82" fill="#FEFECE" filter="url(#f18ag6b3c2i6is)" rx="8" ry="8"
+                 style="stroke: #A80036; stroke-width: 1.5;"/>
+        <path d="M756.5,90 L756.5,117 M743.5,98 L769.5,98 M756.5,117 L743.5,132 M756.5,117 L769.5,132 " fill="none"
+              filter="url(#f18ag6b3c2i6is)" style="stroke: #A80036; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="79"
+              x="717" y="152.4659">user output
+        </text><!--MD5=[218dafdd2894e752725d408d7c49fd04]
+entity video1-->
+        <path d="M174.5,253.5 C174.5,243.5 206.5,243.5 206.5,243.5 C206.5,243.5 238.5,243.5 238.5,253.5 L238.5,281.5679 C238.5,291.5679 206.5,291.5679 206.5,291.5679 C206.5,291.5679 174.5,291.5679 174.5,281.5679 L174.5,253.5 "
+              fill="#FEFECE" filter="url(#f18ag6b3c2i6is)" style="stroke: #000000; stroke-width: 1.5;"/>
+        <path d="M174.5,253.5 C174.5,263.5 206.5,263.5 206.5,263.5 C206.5,263.5 238.5,263.5 238.5,253.5 " fill="none"
+              style="stroke: #000000; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="44"
+              x="184.5" y="282.4659">video1
+        </text><!--MD5=[a9ad3a2082368403df4b3da15a26969e]
+entity video2-->
+        <path d="M577,253.5 C577,243.5 609,243.5 609,243.5 C609,243.5 641,243.5 641,253.5 L641,281.5679 C641,291.5679 609,291.5679 609,291.5679 C609,291.5679 577,291.5679 577,281.5679 L577,253.5 "
+              fill="#FEFECE" filter="url(#f18ag6b3c2i6is)" style="stroke: #000000; stroke-width: 1.5;"/>
+        <path d="M577,253.5 C577,263.5 609,263.5 609,263.5 C609,263.5 641,263.5 641,253.5 " fill="none"
+              style="stroke: #000000; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="44"
+              x="587" y="282.4659">video2
+        </text><!--MD5=[f021b5f1bf4602a5d279e290e9e67ec3]
+entity yuotube-->
+        <path d="M378.6083,253.1562 C381.218,247.2968 386.4315,246.6478 390.0151,252.181 C392.6898,246.4079 396.0157,245.7418 400.4457,250.4311 C403.7037,243.7773 409.592,244.2882 413.2566,250.0103 C416.7444,245.5774 421.0968,246.4607 423.0678,251.5699 C427.4237,244.7769 433.0013,246.4651 436.3698,252.5868 C439.6023,247.8525 443.1777,246.9988 446.5442,252.453 C457.1852,255.5141 458.4263,260.9204 452.1131,269.5153 C459.3654,277.3396 456.0639,283.8981 446.4335,285.8534 C443.7322,291.6129 439.8018,291.7627 435.587,287.4897 C434.0017,294.7378 428.8063,296.5392 423.2187,291.5272 C421.6983,296.412 416.9721,298.1938 413.3967,293.6732 C408.8994,298.252 402.5484,297.1989 400.6846,290.6615 C395.2317,295.8114 391.8477,294.2157 388.917,288.0406 C384.1882,292.7117 380.0639,292.6277 377.4175,285.9337 C369.3162,281.9757 366.0811,275.7819 374.2786,268.8323 C366.8261,262.2899 369.027,254.9938 378.6083,253.1562 "
+              fill="#FEFECE" style="stroke: #000000; stroke-width: 1.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="55"
+              x="384" y="272.9659">yuotube
+        </text><!--MD5=[eec2e2d6d531aaec852b48b35dbf3515]
+link user input to tgqueue-app-->
+        <path d="M83.73,114.5 C102.33,114.5 125.84,114.5 147.23,114.5 " fill="none" id="user input-&gt;tgqueue-app"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="152.33,114.5,143.33,110.5,147.33,114.5,143.33,118.5,152.33,114.5"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[79938fac9d848853dececa8f9c0070cf]
+link tgqueue-app to tg-dispatcher-->
+        <path d="M206.5,134.03 C206.5,143.91 206.5,153.79 206.5,163.68 " fill="none" id="tgqueue-app-&gt;tg-dispatcher"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="206.5,168.84,210.5,159.84,206.5,163.84,202.5,159.84,206.5,168.84"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4dddc0e4f30231d8bbcaea2dc469b58b]
+link tg-dispatcher to tgqueue-app-download-->
+        <path d="M262.17,188.5 C278.91,188.5 297.84,188.5 316.43,188.5 " fill="none"
+              id="tg-dispatcher-&gt;tgqueue-app-download" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="321.66,188.5,312.66,184.5,316.66,188.5,312.66,192.5,321.66,188.5"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[33a57d7828245068685e77367ba6dce2]
+link tgqueue-app-download to tg-enricher-->
+        <path d="M501.1,188.5 C519.78,188.5 538.9,188.5 555.72,188.5 " fill="none"
+              id="tgqueue-app-download-&gt;tg-enricher" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="560.86,188.5,551.86,184.5,555.86,188.5,551.86,192.5,560.86,188.5"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3f1904e23d1e373d79d5900f256bb933]
+reverse link tg-sender to tg-enricher-->
+        <path d="M609,139.2 C609,149.08 609,158.96 609,168.84 " fill="none" id="tg-sender&lt;-tg-enricher"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="609,134.03,605,143.03,609,139.03,613,143.03,609,134.03"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d743b03be62eabdb0baf756b788b1aec]
+link tg-sender to user output-->
+        <path d="M652.08,114.5 C670.8,114.5 692.84,114.5 711.75,114.5 " fill="none" id="tg-sender-&gt;user output"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="716.99,114.5,707.99,110.5,711.99,114.5,707.99,118.5,716.99,114.5"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c5656bebdca931bec235f95e1c241710]
+link tg-dispatcher to video1-->
+        <path d="M206.5,208.24 C206.5,218.23 206.5,228.22 206.5,238.21 " fill="none" id="tg-dispatcher-&gt;video1"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="206.5,243.43,210.5,234.43,206.5,238.43,202.5,234.43,206.5,243.43"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[17dee5b098f0e33fd3137300e626cd26]
+link tg-enricher to video2-->
+        <path d="M609,208.24 C609,218.23 609,228.22 609,238.21 " fill="none" id="tg-enricher-&gt;video2"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="609,243.43,613,234.43,609,238.43,605,234.43,609,243.43"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[aa6549ffc89cbc59295c05ed250ac42c]
+reverse link tgqueue-app-download to yuotube-->
+        <path d="M411.5,213.18 C411.5,223.06 411.5,232.94 411.5,242.81 " fill="none"
+              id="tgqueue-app-download&lt;-yuotube" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="411.5,208.02,407.5,217.02,411.5,213.02,415.5,217.02,411.5,208.02"
+                 style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c743a64289fd9ab38f3a99e32d2a4bb5]
+@startuml
+left to right direction
+
+queue rabbitMQ
+:user input: - -> [tgqueue-app]
+[tgqueue-app] -r-> [tg-dispatcher]
+[tg-dispatcher] - -> [tgqueue-app-download]
+[tgqueue-app-download] - -> [tg-enricher]
+[tg-enricher] -l-> [tg-sender]
+[tg-sender] - -> :user output:
+
+database video1
+database video2
+[tg-dispatcher] -r-> video1
+[tg-enricher] -r-> video2
+
+cloud yuotube
+[tgqueue-app-download] <-r- yuotube
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.6+7-Ubuntu-124.04.1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>
