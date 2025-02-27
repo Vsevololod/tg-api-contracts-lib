@@ -18,3 +18,17 @@ message TgSendMessage {
   MessageType type = 3;             // Тип сообщения (используем enum)
   map<string, string> params = 4;   // Параметры в виде ключ-значение
 }
+
+message VideoDownloadedMessage {
+  string request_id = 1;        // Идентификатор запроса
+  string path = 2;              // Путь к видеофайлу
+  string title = 3;             // Название видео
+  int32 duration = 4;           // Длительность в секундах
+  int64 timestamp = 5;          // Время в формате Unix timestamp
+  int64 filesize = 6;           // Размер файла в байтах
+  string thumbnail = 7;         // URL миниатюры видео
+  string channel_url = 8;       // URL канала
+  string channel_id = 9;        // Идентификатор канала
+  string channel = 10;          // Название канала
+  string id = 11;               // Идентификатор видео
+}
