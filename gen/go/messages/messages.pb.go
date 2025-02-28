@@ -73,6 +73,55 @@ func (MessageType) EnumDescriptor() ([]byte, []int) {
 	return file_messages_messages_proto_rawDescGZIP(), []int{0}
 }
 
+type MessageParams int32
+
+const (
+	MessageParams_UNKNOWN_PARAM MessageParams = 0 // Неизвестный тип сообщения (по умолчанию)
+	MessageParams_FILE_URL      MessageParams = 1 // Текстовое сообщение
+	MessageParams_PHOTO_URL     MessageParams = 2 // Сообщение с изображением
+)
+
+// Enum value maps for MessageParams.
+var (
+	MessageParams_name = map[int32]string{
+		0: "UNKNOWN_PARAM",
+		1: "FILE_URL",
+		2: "PHOTO_URL",
+	}
+	MessageParams_value = map[string]int32{
+		"UNKNOWN_PARAM": 0,
+		"FILE_URL":      1,
+		"PHOTO_URL":     2,
+	}
+)
+
+func (x MessageParams) Enum() *MessageParams {
+	p := new(MessageParams)
+	*p = x
+	return p
+}
+
+func (x MessageParams) String() string {
+	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+}
+
+func (MessageParams) Descriptor() protoreflect.EnumDescriptor {
+	return file_messages_messages_proto_enumTypes[1].Descriptor()
+}
+
+func (MessageParams) Type() protoreflect.EnumType {
+	return &file_messages_messages_proto_enumTypes[1]
+}
+
+func (x MessageParams) Number() protoreflect.EnumNumber {
+	return protoreflect.EnumNumber(x)
+}
+
+// Deprecated: Use MessageParams.Descriptor instead.
+func (MessageParams) EnumDescriptor() ([]byte, []int) {
+	return file_messages_messages_proto_rawDescGZIP(), []int{1}
+}
+
 // Сообщение
 type TgSendMessage struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
@@ -309,9 +358,13 @@ var file_messages_messages_proto_rawDesc = string([]byte{
 	0x67, 0x65, 0x54, 0x79, 0x70, 0x65, 0x12, 0x0b, 0x0a, 0x07, 0x55, 0x4e, 0x4b, 0x4e, 0x4f, 0x57,
 	0x4e, 0x10, 0x00, 0x12, 0x08, 0x0a, 0x04, 0x54, 0x45, 0x58, 0x54, 0x10, 0x01, 0x12, 0x09, 0x0a,
 	0x05, 0x56, 0x49, 0x44, 0x45, 0x4f, 0x10, 0x02, 0x12, 0x09, 0x0a, 0x05, 0x49, 0x4d, 0x41, 0x47,
-	0x45, 0x10, 0x03, 0x42, 0x1e, 0x5a, 0x1c, 0x76, 0x73, 0x65, 0x76, 0x6f, 0x2e, 0x6d, 0x65, 0x73,
-	0x73, 0x61, 0x67, 0x65, 0x73, 0x2e, 0x76, 0x31, 0x3b, 0x6d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65,
-	0x73, 0x76, 0x31, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x45, 0x10, 0x03, 0x2a, 0x3f, 0x0a, 0x0d, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x50, 0x61,
+	0x72, 0x61, 0x6d, 0x73, 0x12, 0x11, 0x0a, 0x0d, 0x55, 0x4e, 0x4b, 0x4e, 0x4f, 0x57, 0x4e, 0x5f,
+	0x50, 0x41, 0x52, 0x41, 0x4d, 0x10, 0x00, 0x12, 0x0c, 0x0a, 0x08, 0x46, 0x49, 0x4c, 0x45, 0x5f,
+	0x55, 0x52, 0x4c, 0x10, 0x01, 0x12, 0x0d, 0x0a, 0x09, 0x50, 0x48, 0x4f, 0x54, 0x4f, 0x5f, 0x55,
+	0x52, 0x4c, 0x10, 0x02, 0x42, 0x1e, 0x5a, 0x1c, 0x76, 0x73, 0x65, 0x76, 0x6f, 0x2e, 0x6d, 0x65,
+	0x73, 0x73, 0x61, 0x67, 0x65, 0x73, 0x2e, 0x76, 0x31, 0x3b, 0x6d, 0x65, 0x73, 0x73, 0x61, 0x67,
+	0x65, 0x73, 0x76, 0x31, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 })
 
 var (
@@ -326,17 +379,18 @@ func file_messages_messages_proto_rawDescGZIP() []byte {
 	return file_messages_messages_proto_rawDescData
 }
 
-var file_messages_messages_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_messages_messages_proto_enumTypes = make([]protoimpl.EnumInfo, 2)
 var file_messages_messages_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
 var file_messages_messages_proto_goTypes = []any{
 	(MessageType)(0),               // 0: messages.MessageType
-	(*TgSendMessage)(nil),          // 1: messages.TgSendMessage
-	(*VideoDownloadedMessage)(nil), // 2: messages.VideoDownloadedMessage
-	nil,                            // 3: messages.TgSendMessage.ParamsEntry
+	(MessageParams)(0),             // 1: messages.MessageParams
+	(*TgSendMessage)(nil),          // 2: messages.TgSendMessage
+	(*VideoDownloadedMessage)(nil), // 3: messages.VideoDownloadedMessage
+	nil,                            // 4: messages.TgSendMessage.ParamsEntry
 }
 var file_messages_messages_proto_depIdxs = []int32{
 	0, // 0: messages.TgSendMessage.type:type_name -> messages.MessageType
-	3, // 1: messages.TgSendMessage.params:type_name -> messages.TgSendMessage.ParamsEntry
+	4, // 1: messages.TgSendMessage.params:type_name -> messages.TgSendMessage.ParamsEntry
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name
@@ -354,7 +408,7 @@ func file_messages_messages_proto_init() {
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_messages_messages_proto_rawDesc), len(file_messages_messages_proto_rawDesc)),
-			NumEnums:      1,
+			NumEnums:      2,
 			NumMessages:   3,
 			NumExtensions: 0,
 			NumServices:   0,

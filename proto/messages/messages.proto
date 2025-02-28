@@ -11,6 +11,12 @@ enum MessageType {
   IMAGE = 3;    // Сообщение с изображением
 }
 
+enum MessageParams {
+  UNKNOWN_PARAM = 0;  // Неизвестный тип сообщения (по умолчанию)
+  FILE_URL = 1;     // Текстовое сообщение
+  PHOTO_URL = 2;    // Сообщение с изображением
+}
+
 // Сообщение
 message TgSendMessage {
   string text = 1;                  // Текст сообщения
